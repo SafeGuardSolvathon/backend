@@ -9,7 +9,7 @@ class User(models.Model):
         return self.username
 
 class Notes(models.Model):
-    empid = models.CharField(max_length=255, unique=True, null=True)
+    empid = models.CharField(max_length=255, unique=False, null=True)
     description = models.TextField(blank=False)
     time = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
